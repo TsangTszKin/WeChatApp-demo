@@ -1,4 +1,3 @@
-
 <view class="container more">
   <view class="user flex-wrp">
     <view class="avatar flex-item">
@@ -12,7 +11,7 @@
 
   <view class="my">
     <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
+      <view class="myitem-icon flex-item">
         <image src="../../images/eye.png"></image>
       </view>
       <view class="myitem-name flex-item">
@@ -20,7 +19,7 @@
       </view>
     </view>
     <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
+      <view class="myitem-icon flex-item">
         <image src="../../images/star.png"></image>
       </view>
       <view class="myitem-name flex-item">
@@ -28,7 +27,7 @@
       </view>
     </view>
     <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
+      <view class="myitem-icon flex-item">
         <image src="../../images/draft.png"></image>
       </view>
       <view class="myitem-name flex-item">
@@ -36,7 +35,7 @@
       </view>
     </view>
     <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
+      <view class="myitem-icon flex-item">
         <image src="../../images/recent.png"></image>
       </view>
       <view class="myitem-name flex-item">
@@ -44,7 +43,7 @@
       </view>
     </view>
     <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
+      <view class="myitem-icon flex-item">
         <image src="../../images/book.png"></image>
       </view>
       <view class="myitem-name flex-item">
@@ -52,7 +51,7 @@
       </view>
     </view>
     <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
+      <view class="myitem-icon flex-item">
         <image src="../../images/live.png"></image>
       </view>
       <view class="myitem-name flex-item">
@@ -60,7 +59,7 @@
       </view>
     </view>
     <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
+      <view class="myitem-icon flex-item">
         <image src="../../images/zhi.png"></image>
       </view>
       <view class="myitem-name flex-item">

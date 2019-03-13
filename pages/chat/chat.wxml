@@ -1,4 +1,3 @@
-
 <view class="container chat">
   <view class="chat-item flex-wrp">
     <view class="avatar flex-item">
@@ -26,5 +25,3 @@
   </view>
 
 </view>
-
-
