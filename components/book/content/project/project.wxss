@@ -1,0 +1,74 @@
+/* components/home/content/hot/hot.wxss */
+@import '/style/weui.wxss';
+
+.project-cell {
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.project-cell .header {
+  margin-bottom: 5px;
+}
+
+.project-cell .header .weui-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.project-cell .header .title {
+  font-size: 20px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  letter-spacing: 2px;
+  line-height: 19px;
+  padding: 8px 0;
+  width:calc(100% - 65px);
+}
+
+.content {
+  height: 150px;
+  display: webkit-flex;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+}
+
+.content .img {
+  width: 100%;
+}
+
+.foot {
+  width: 100%;
+  position: relative;
+}
+
+.foot .intro {
+  margin: 10px 0;
+}
+
+.foot .intro .intro-text {
+  height: 15px;
+  line-height: 15px;
+  font-size: 20px;
+}
+
+.foot .functions {
+  /* height: 15px;
+  line-height: 15px; */
+  font-size: 15px;
+}
+
+.foot .functions .functions-text {
+  border: 1px solid #179b16;
+  padding: 1px 7px;
+  font-size: 12px;
+  border-radius: 6px;
+  margin-right: 10px;
+}

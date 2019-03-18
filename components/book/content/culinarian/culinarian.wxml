@@ -1,0 +1,7 @@
+<!--components/home/content/hot/hot.wxml-->
+<view class="culinarian-cell" hover-class="weui-cell_active">
+  <view class='header'>
+    <text class='title'>{{name}}</text>
+    <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="goToBookTime" data-id="{{id}}">预约</button>
+  </view>
+</view>

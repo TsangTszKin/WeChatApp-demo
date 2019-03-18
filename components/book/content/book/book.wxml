@@ -1,0 +1,17 @@
+<!--components/home/content/hot/hot.wxml-->
+<view class="book-cell" hover-class="weui-cell_active">
+  <view class='header'>
+    <text class='title'>旗舰店{{shopName}}</text>
+    <text class='status'>{{status == 0?"已服务":status == 1?"待签到":status == 2?"待服务":''}}</text>
+  </view>
+  <text class='title2'>调理师：{{man}}</text>
+  <text class='title2'>预约时段：{{bookTime}}</text>
+  <text class='title2'>养生项目：{{projectName}}</text>
+  <text class='title2'>服务时间：{{serviceTime}}</text>
+  <view class='option-group'>
+    <button class="weui-btn mini-btn" type="primary" size="mini" bindtap='look'>查看</button>
+    <button class="weui-btn mini-btn" type="default" size="mini" bindtap='evaluate'>评价</button>
+    <button class="weui-btn mini-btn" type="default" size="mini" bindtap='sign'>签到</button>
+    <button class="weui-btn mini-btn" type="warn" size="mini" bindtap='cancel'>取消</button>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/book-time/book-time.wxml-->
+<view class="culinarian-cell" hover-class="weui-cell_active">
+  <view class='title1'>调理师：xxx</view>
+  <view class='title2'>选择服务时间</view>
+  <view class='header' wx:for="{{list}}" wx:for-index="i" wx:key="i">
+    <text class='title'>{{item.time}}</text>
+    <text class='status'>{{item.status == 0?'已满':''}}</text>
+    <button class="weui-btn mini-btn" type="primary" size="mini" data-status="{{item.status}}" bindtap="book">预约</button>
+  </view>
+</view>

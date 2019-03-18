@@ -1,0 +1,37 @@
+<!--components/navbar.wxml-->
+<view class="weui-tab">
+  <view class="weui-navbar">
+    <block wx:for="{{tabs}}" wx:key="*this">
+      <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+        <view class="weui-navbar__title">{{item}}</view>
+      </view>
+    </block>
+    <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+  </view>
+
+  <view class="weui-tab__panel">
+
+    <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+      <view class="weui-panel__bd">
+        <home-cell wx:for="{{homeList}}" wx:for-index="i" wx:key="id" wx:for-item="item" id="{{item.id}}" imgPath="{{item.imgPath}}" title="{{item.title}}" address="{{item.address}}" time="{{item.time}}" />
+      </view>
+    </view>
+    <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+      <view class="weui-panel__bd">
+        <project-cell wx:for="{{projectList}}" wx:for-index="i" wx:key="id" wx:for-item="item" id="{{item.id}}" imgPath="{{item.imgPath}}" title="{{item.title}}" intro="{{item.intro}}" functions="{{item.functions}}" />
+      </view>
+    </view>
+    <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+      <view class="weui-panel__bd">
+        <culinarian-cell wx:for="{{culinarianList}}" wx:for-index="i" wx:key="id" wx:for-item="item" id="{{item.id}}" name="{{item.name}}" />
+      </view>
+    </view>
+    <view class="weui-tab__content" hidden="{{activeIndex != 3}}">
+      <view class="weui-panel__bd">
+        <book-cell wx:for="{{bookList}}" wx:for-index="i" wx:key="id" wx:for-item="item" id="{{item.id}}" shopName="{{item.shopName}}" man="{{item.man}}" bookTime="{{item.bookTime}}" projectName="{{item.projectName}}" serviceTime="{{item.serviceTime}}"  status="{{item.status}}" />
+      </view>
+    </view>
+
+  </view>
+
+</view>

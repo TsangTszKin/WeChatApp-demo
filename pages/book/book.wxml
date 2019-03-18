@@ -2,13 +2,13 @@
 <scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
 
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='display:webkit-flex;display: flex;justify-content: center;overflow: hidden;align-items: center;'>
-    <block wx:for="{{imgUrls}}" wx:for-index="i" wx:key="i">
+    <block wx:for="{{imgUrls}}" wx:for-index="i" wx:key="i" >
       <swiper-item style='display:webkit-flex;display: flex;justify-content: center;overflow: hidden;align-items: center;height: 150px;'>
         <image src="{{item}}" class="slide-image" style="width:{{coverImgwidth}}px; height:{{coverImgheight }}px;" bindload="coverImageLoad" />
       </swiper-item>
     </block>
   </swiper>
 
-  <navbar hotList="{{hotList}}"></navbar>
+  <navbar homeList="{{homeList}}" projectList="{{projectList}}"  culinarianList="{{culinarianList}}" bookList="{{bookList}}"  bindtabChange="tabChange" activeIndex="{{activeIndex}}"></navbar>
 
 </scroll-view>

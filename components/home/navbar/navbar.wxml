@@ -1,0 +1,25 @@
+<!--components/navbar.wxml-->
+<view class="weui-tab">
+  <view class="weui-navbar">
+    <block wx:for="{{tabs}}" wx:key="*this">
+      <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+        <view class="weui-navbar__title">{{item}}</view>
+      </view>
+    </block>
+    <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+  </view>
+
+  <view class="weui-tab__panel">
+
+    <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+      <view class="weui-panel__bd">
+        <hot wx:for="{{hotList}}" wx:for-index="i" wx:key="id" wx:for-item="hot" id="{{hot.id}}" imgPath="{{hot.imgPath}}" title="{{hot.title}}" intro="{{hot.intro}}"></hot>
+      </view>
+    </view>
+    <view class="weui-tab__content" hidden="{{activeIndex != 1}}">养生学堂</view>
+    <view class="weui-tab__content" hidden="{{activeIndex != 2}}">活动推荐</view>
+    <view class="weui-tab__content" hidden="{{activeIndex != 3}}">精彩分享</view>
+
+  </view>
+
+</view>

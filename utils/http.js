@@ -1,6 +1,6 @@
 const API_HOST = "http://xxx.com/xxx";
 const DEBUG = true; //切换数据入口
-const Mock = require('mock.js')
+var Mock = require('mock.js')
 
 let ajax = (method, url, data, callBack, mockData) => {
   if (!DEBUG) {

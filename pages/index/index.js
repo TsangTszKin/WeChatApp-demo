@@ -6,7 +6,49 @@ var app = getApp()
 Page({
   data: {
     feed: [],
-    feed_length: 0
+    feed_length: 0,
+    imgUrls: [
+      '../../images/muwu.jpg',
+      '../../images/yuantiao.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: false,
+    interval: 3000,
+    duration: 300,
+    screenWidth: 0,
+    screenHeight: 0,
+    coverImgwidth: 0,
+    coverImgheight: 0,
+
+
+    activeIndex: 1,
+    sliderOffset: 0,
+    sliderLeft: 0,
+
+    hotList: []
+  },
+  init() {
+    var _this = this;
+    wx.getSystemInfo({
+      success: function(res) {
+        _this.setData({
+          coverImgwidth: res.windowHeight,
+          coverImgheight: res.windowWidth,
+        });
+      }
+    });
+  },
+  coverImageLoad: function(e) {
+    var _this = this;
+    var $width = e.detail.width, //获取图片真实宽度  
+      $height = e.detail.height,
+      ratio = $width //图片的真实宽高比例  
+    var viewWidth = _this.data.screenWidth, //设置图片显示宽度，  
+      viewHeight = viewWidth //计算的高度值     
+    this.setData({
+      imgwidth: viewWidth,
+      imgheight: viewHeight
+    })
   },
   //事件处理函数
   bindItemTap: function() {
@@ -20,38 +62,27 @@ Page({
     })
   },
   onLoad: function() {
-    console.log('onLoad')
+    console.log('onLoad');
+    this.init();
+
     var that = this
     //调用应用实例的方法获取全局数据
-    this.getData();
-
-
-    let mockData = {
-      "address|2-4": {
-        "110000": "北京市",
-        "120000": "天津市",
-        "130000": "河北省",
-        "140000": "山西省"
-      }
-    }
-    wx.showToast({
-      title: '加载中',
-      icon: 'loading',
-      duration: 4000
-    })
-    http.ajax('get', '/api/test', {}, (res) => {
-      console.log(res)
-    }, mockData)
-    wx.hideToash()
+    this.refresh();
+  },
+  tabClick: function(e) {
+    this.setData({
+      sliderOffset: e.currentTarget.offsetLeft,
+      activeIndex: e.currentTarget.id
+    });
   },
   upper: function() {
-    wx.showNavigationBarLoading()
-    this.refresh();
-    console.log("upper");
-    setTimeout(function() {
-      wx.hideNavigationBarLoading();
-      wx.stopPullDownRefresh();
-    }, 2000);
+    // wx.showNavigationBarLoading()
+    // this.refresh();
+    // console.log("upper");
+    // setTimeout(function() {
+    //   wx.hideNavigationBarLoading();
+    //   wx.stopPullDownRefresh();
+    // }, 2000);
   },
   lower: function(e) {
     wx.showNavigationBarLoading();
@@ -62,76 +93,61 @@ Page({
     }, 1000);
     console.log("lower")
   },
-  //scroll: function (e) {
-  //  console.log("scroll")
-  //},
 
-  //网络请求数据, 实现首页刷新
-  refresh0: function() {
-    var index_api = '';
-    util.getData(index_api)
-      .then(function(data) {
-        //this.setData({
-        //
-        //});
-        console.log(data);
-      });
-  },
 
-  //使用本地 fake 数据实现刷新效果
-  getData: function() {
-    var feed = util.getData2();
-    console.log("loaddata");
-    var feed_data = feed.data;
-    this.setData({
-      feed: feed_data,
-      feed_length: feed_data.length
-    });
-  },
+
   refresh: function() {
+    let self = this;
     wx.showToast({
       title: '刷新中',
-      icon: 'loading',
-      duration: 3000
+      icon: 'loading'
     });
-    var feed = util.getData2();
-    console.log("loaddata");
-    var feed_data = feed.data;
-    this.setData({
-      feed: feed_data,
-      feed_length: feed_data.length
-    });
-    setTimeout(function() {
-      wx.showToast({
-        title: '刷新成功',
-        icon: 'success',
-        duration: 2000
-      })
-    }, 3000)
+
+    let mockData = {
+      "hot|5": [{
+        'id|+1': 1,
+        'imgPath': "",
+        "title|5-20": 'x',
+        "intro|30-100": 'x',
+      }]
+    }
+    http.ajax('get', '/api/test', {}, (res) => {
+      // console.log(res);
+      self.setData({
+        hotList: res.data.hot
+      });
+      wx.hideToast()
+    }, mockData)
 
   },
 
   //使用本地 fake 数据实现继续加载效果
   nextLoad: function() {
+    let self = this;
     wx.showToast({
       title: '加载中',
       icon: 'loading',
-      duration: 4000
     })
-    var next = util.getNext();
-    console.log("continueload");
-    var next_data = next.data;
-    this.setData({
-      feed: this.data.feed.concat(next_data),
-      feed_length: this.data.feed_length + next_data.length
-    });
-    setTimeout(function() {
-      wx.showToast({
-        title: '加载成功',
-        icon: 'success',
-        duration: 2000
+    let mockData = {
+      "hot|5": [{
+        'id|+1': 1,
+        'imgPath': "",
+        "title|5-20": 'x',
+        "intro|30-100": 'x',
+      }]
+    }
+    http.ajax('get', '/api/test', {}, (res) => {
+      // console.log(res);
+      let hotList = self.data.hotList;
+      res.data.hot.forEach(element => {
+        hotList.push(element);
       })
-    }, 3000)
+      self.setData({
+        hotList: hotList
+      });
+      wx.hideToast()
+    }, mockData)
+    
   }
 
 

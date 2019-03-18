@@ -1,0 +1,13 @@
+<!--components/home/content/hot/hot.wxml-->
+<navigator url="../../../../artical/artical?id={{id}}" class="home-cell" hover-class="weui-cell_active">
+  <text class='title'>{{title}}</text>
+
+  <view class='content'>
+      <image class="img" src="../../../../images/yuantiao.jpg" />
+  </view>
+  <view class='foot'>
+    <image class="img" src='../../../../images/location.png' />
+    <text class='address'>{{address}}</text>
+    <text class='time'>{{time}}</text>
+  </view>
+</navigator>

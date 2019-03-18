@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "home-cell": "/components/book/content/home/home",
+    "project-cell": "/components/book/content/project/project",
+    "culinarian-cell": "/components/book/content/culinarian/culinarian",
+    "book-cell": "/components/book/content/book/book"
+  }
+}

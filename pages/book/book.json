@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navbar": "/components/book/navbar/navbar"
+  },
+  "navigationBarTitleText": "养生预约"
+}

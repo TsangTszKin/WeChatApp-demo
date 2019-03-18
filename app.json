@@ -1,51 +1,56 @@
 {
-  "pages":[
+  "pages": [
+    "pages/book/book",
     "pages/index/index",
+    "pages/book-time/book-time",
+    
     "pages/discovery/discovery",
     "pages/notify/notify",
     "pages/chat/chat",
     "pages/more/more",
     "pages/answer/answer",
-    "pages/question/question"
+    "pages/question/question",
+    "components/book/content/project/project",
+    "pages/artical/artical"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#0068C4",
-    "navigationBarTitleText": "知乎",
-    "navigationBarTextStyle":"white",
-    "enablePullDownRefresh":true
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#179B16",
+    "navigationBarTitleText": "禅易同空间养生馆",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#626567",
-    "selectedColor": "#2A8CE5",
+    "selectedColor": "#179B16",
     "backgroundColor": "#FBFBFB",
     "borderStyle": "white",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "",
-      "iconPath": "images/index.png",
-      "selectedIconPath": "images/index_focus.png"
-    }, {
-      "pagePath": "pages/discovery/discovery",
-      "text": "",
-      "iconPath": "images/discovery.png",
-      "selectedIconPath": "images/discovery_focus.png"
-    }, {
-      "pagePath": "pages/notify/notify",
-      "text": "",
-      "iconPath": "images/ring.png",
-      "selectedIconPath": "images/ring_focus.png"
-    }, {
-      "pagePath": "pages/chat/chat",
-      "text": "",
-      "iconPath": "images/chat.png",
-      "selectedIconPath": "images/chat_focus.png"
-    }, {
-      "pagePath": "pages/more/more",
-      "text": "",
-      "iconPath": "images/burger.png",
-      "selectedIconPath": "images/burger_focus.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-active.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "养生预约",
+        "iconPath": "images/book.png",
+        "selectedIconPath": "images/book-active.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "商城",
+        "iconPath": "images/shop.png",
+        "selectedIconPath": "images/shop-active.png"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "我的",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me-active.png"
+      }
+    ]
   },
   "networkTimeout": {
     "request": 10000,

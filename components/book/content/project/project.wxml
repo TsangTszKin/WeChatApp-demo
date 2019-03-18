@@ -1,0 +1,20 @@
+<!--components/home/content/hot/hot.wxml-->
+<navigator url="" class="project-cell" hover-class="weui-cell_active">
+  <view class='header'>
+    <text class='title'>{{title}}</text>
+    <button class="weui-btn mini-btn" type="primary" size="mini">预约</button>
+  </view>
+
+  <view class='content'>
+    <image class="img" src="../../../../images/yuantiao.jpg" />
+  </view>
+  <view class='foot'>
+    <view class='intro'>
+      <text class='intro-text'>{{intro}}</text>
+    </view>
+
+    <view class='functions'>主治：
+      <text class='functions-text' wx:for="{{functions}}" wx:for-index="i" wx:key="i" wx:for-item="item">{{item}}</text>
+    </view> 
+  </view>
+</navigator>
