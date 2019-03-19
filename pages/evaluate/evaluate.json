@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "stars": "/components/common/stars/stars"
+  },
+  "navigationBarTitleText": "会员评价"
+}

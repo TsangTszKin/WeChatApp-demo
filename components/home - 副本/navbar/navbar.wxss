@@ -1,6 +1,0 @@
-/* components/navbar.wxss */
-@import '/style/weui.wxss';
-
-.weui-navbar__slider {
-  width: 25%;
-}

@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/book/book",
     "pages/index/index",
+    "pages/evaluate/evaluate",
+    "pages/book/book",
+    "pages/book-details/book-details",
     "pages/book-time/book-time",
-    
     "pages/discovery/discovery",
     "pages/notify/notify",
     "pages/chat/chat",

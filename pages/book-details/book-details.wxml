@@ -1,0 +1,110 @@
+<!--pages/book-details/book-details.wxml-->
+<view class='book-details'>
+
+  <view class="book-cell" hover-class="weui-cell_active">
+    <view class='header'>
+      <text class='title wx-h1'>旗舰店xxx</text>
+      <text class='status'>已服务</text>
+    </view>
+    <view class='title2 wx-font1 wx-h2'>调理师：
+      <text class='wx-font2'>李白</text>
+    </view>
+    <view class='title2 wx-font1 wx-h2'>预约时段：
+      <text class='wx-font2'>08:00~09:00</text>
+    </view>
+    <view class='title2 wx-font1 wx-h2'>养生项目：
+      <text class='wx-font2'>xxxxxxx</text>
+    </view>
+    <view class='title2 wx-font1 wx-h2'>服务时间：
+      <text class='wx-font2'>2019年02月2日 08:00</text>
+    </view>
+  </view>
+
+  <view class="question-cell" hover-class="weui-cell_active">
+    <view class='header'>
+      <text class='title'>健康问卷</text>
+    </view>
+    <view class='content wx-font1 wx-h2'>睡眠质量：
+      <text class='text-2 wx-font2'>不易入睡</text>
+    </view>
+    <view class='content wx-font1 wx-h2'>排便情况：
+      <text class='text-2 wx-font2'>经常肚疼，拉稀</text>
+    </view>
+    <view class='content wx-font1 wx-h2'>就诊要求：
+      <text class='text-2 wx-font2'>改善睡眠，改善肠道消化问题</text>
+    </view>
+  </view>
+
+  <view class="img-cell" hover-class="weui-cell_active">
+    <view class='header'>
+      <text class='title'>舌诊图</text>
+      <button class="weui-btn mini-btn status" type="default" size="mini">更多</button>
+    </view>
+    <view class="body">
+      <view class='content wx-font1 wx-h2'>
+        <text class='title'>前</text>
+        <view class='content-2'>
+          <image class='img' src='../../images/yuantiao.jpg'></image>
+        </view>
+      </view>
+      <view class='content wx-font1 wx-h2'>
+        <text class='title'>后</text>
+        <view class='content-2'>
+          <image class='img' src='../../images/yuantiao.jpg'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="project-cell" hover-class="weui-cell_active">
+    <view class='header'>
+      <text class='title'>养生项目</text>
+    </view>
+    <view class='content wx-font2 wx-h2'>空间火炙：
+      <text class='text-2 wx-font2'>300</text>
+    </view>
+    <view class='content wx-font2 wx-h2'>空间艾炙：
+      <text class='text-2 wx-font2'>100</text>
+    </view>
+    <view class='content wx-font1 wx-h2'>合计：
+      <text class='text-2 wx-font2' style='color: red;'>400</text>
+    </view>
+    <view class='content wx-font1 wx-h2' style='margin-bottom: 10px;'>折后：
+      <text class='text-2 wx-font2' style='color: red;'>300</text>
+    </view>
+    <view class='content wx-font1 wx-h2'>
+      <view>注意事项：</view>
+      <text class='text-2 wx-font2'>火炙4小时内不宜碰生水，喝凉水。注意保暖，勿吹风</text>
+    </view>
+    <view class='content wx-font1 wx-h2'>
+      <view>调理师建议：</view>
+      <text class='text-2 wx-font2'>建议继续调理，下次请带外套，防受风</text>
+    </view>
+  </view>
+
+
+  <view class="evaluate-cell" hover-class="weui-cell_active">
+    <view class='header'>
+      <text class='title wx-h1'>会员评价</text>
+      <text class='status wx-font2 wx-h2'>2019-03-19 12:00</text>
+    </view>
+    <view class='wx-font1 wx-h2 stars-row'>
+      <view class='title2'>环境质量：</view>
+      <stars />
+    </view>
+    <view class='title2 wx-font1 wx-h2 stars-row'>
+      <view class='title2'>服务态度：</view>
+      <stars />
+    </view>
+    <view class='title2 wx-font1 wx-h2 stars-row'>
+      <view class='title2'>服务质量：</view>
+      <stars />
+    </view>
+    <view class='title2 wx-font1 wx-h2'>个人建议：
+      <text class='wx-font2'>希望下次可以提供些信息</text>
+    </view>
+    <view class='clear'></view>
+  </view>
+
+
+</view>

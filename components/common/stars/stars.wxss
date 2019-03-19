@@ -1,0 +1,44 @@
+.comment1-description {
+  /* padding: 30rpx 0; */
+  display: flex;
+  flex-direction: row;
+}
+
+.stars {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABqUlEQVQ4T6WSMWgUURCG/3+fl0KvMBaaYCcW293evb1KLBRBEAQFkbTBwtrWUqwFsdRCwUIURDwIFglYCDa7twtyRaqAYGNIIaJc8G5+ecvdkYTbQ3C6efPPN/O/94j/DC7qL4rivpl99d6/rNPVArIsWyU5kDRuNpvn4jj+OQ9SC8jz/D2Aa5L+kHzlvV//Z0BRFBck9SQtT5q+S7qSpumXo5DZBlmWxc6562Z2G8BZAKsHxZJ2AOwCeNNoNHqtVms71CtAnuefJcVRFB03s6WqwPnugiUAQ5Jb3vublaosy/ZoNNokeSrkkhYBQm3POddKkuTbbEy/378l6SmAk1PI0U0CGMBvkmve+97MwtRrlmWPSd6RdCJYmDQc3GbfzF50u927055DRgeDwcpwOCwArNRY2XXOXU2SJGiqOATI8/y8pE8kz9T8vB9RFN1ot9sf5wLCZZrZB0mnJwKTZACOTfJ9AGtpmr6r2+AigA1JSyR/mdkz59wegHtmtkwyPPG69/55HeAygEdm9jBN07ckw/QqyrK8NB6PH5B83el0nswF1PheePwXKQW8EfLo/goAAAAASUVORK5CYII=");
+  width: 50rpx;
+  height: 50rpx;
+  background-size: 50rpx 50rpx;
+  margin-left: 30rpx;
+  transition: 600ms;
+}
+
+.on {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACUUlEQVQ4T2NkoBAw4tNvb+1c9fsXw6Njp/cuwaUOpwHGxraSorzsV//+///324sfSkdvHv2MzRCcBrjZO2/Kj+Hw+vuX4ffUFT9W7DywN5FoAyxMHK21lFk3T6vhFgRpKuz6+urCtX8ux8/uuYxuCNwFlsYOGmwcLL5cbAxhJgbi0kn+vyQlhf+A1X/88o+hqPvb/fcfGV5/+fZ/9d/ffzcfPbP/JkgObICjjctxWXFGjRAPHi5nWyM2NpYvDIzM/Ax/vpxGsfD9x/8M567//H303K8fZ68z7N15YG8g2ABLExdDGQnGPXMauYW4hcwZ/v18xMDCY8rw++M+hv//vqIY8uT5Z4bpqxjeHjv9T//4xX1P4V5wdnAO0VZgnt1VKiTAxu/G8PvzcQYWTm2G358Pwg34/OUnw+qdv75t2P8vYtfBfZvhXoCp8HJ2nhjuwZYcFWTG/f/vRwZmNgWGP9+vMPz/8xasZNfR7z+nr/6zcPvePekwPSjRaGrqIGGiwX6+v4xLAqyAiZOBmVON4e/Xi2Bu25xvr3cf/et+/Mye81gNsDRyULE0Zj/Slsclji3OF2z4+nHBxn8BJ87sOYDdABMXQ1dr5h1VKVxiHz7+Yjh7/e+/r98Y/1kYMLLwcjIyHLvw62fLnH8Rx0/t3YDVAGszZ1sjTaZtspKMbMcu/PnKyMA0h5nx39tff5kKncwYBAV5Gdimr/mXeOL0vgVYDbAyc3IS5GXu+/r9d8uBYwfWMTAw/IMptDZ3dhQVZGx69e7fqmOn9k3GagA5ORsAp8nsEQCtlQgAAAAASUVORK5CYII=");
+  width: 50rpx;
+  height: 50rpx;
+  background-size: 50rpx 50rpx;
+  transition: 1s;
+  transform: scale(1, 1);
+}
+
+.weui-cells_after-title {
+  width: 92%;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+}
+
+.btnSf {
+  width: 92%;
+  margin: 30rpx auto;
+}
+
+.btnSf button {
+  background: #57b6ba;
+  color: #fff;
+}
+
+.btnSf button:active {
+  background: #5bc2c6;
+  color: #fff;
+}

@@ -1,6 +1,0 @@
-/* components/home/content/hot/hot.wxss */
-@import '/style/weui.wxss';
-
-.weui-media-box__desc {
-  word-break: break-all;
-}

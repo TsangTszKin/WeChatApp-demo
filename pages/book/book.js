@@ -20,7 +20,7 @@ Page({
     coverImgwidth: 0,
     coverImgheight: 0,
 
-    activeIndex: 3,
+    activeIndex: 0,
     homeList: [],
     projectList: [],
     culinarianList: [],

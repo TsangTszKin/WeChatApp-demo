@@ -58,27 +58,26 @@ Component({
         url: '../../../../book-time/book-time?id=' + id
       })
     },
-    look() {
-      wx.showToast({
-        title: '查看中',
-        icon: 'loading',
-        duration: 2000
+    look(e) {
+      let id = e.currentTarget.dataset.id;
+      wx.navigateTo({
+        url: '../../../../book-details/book-details?id=' + id
       })
     },
-    evaluate() {
-      wx.showToast({
-        title: '评价中',
-        icon: 'loading',
-        duration: 2000
+    evaluate(e) {
+      let id = e.currentTarget.dataset.id;
+      wx.navigateTo({
+        url: '../../../../evaluate/evaluate?id=' + id
       })
     },
-    sign() {
+    sign(e) {
+      let id = e.currentTarget.dataset.id;
       wx.showModal({
         title: '签到确认',
         content: '您已成功签到',
         confirmText: "健康问卷",
         cancelText: "关闭",
-        success: function (res) {
+        success: function(res) {
           console.log(res);
           if (res.confirm) {
             console.log('健康问卷')
@@ -94,7 +93,7 @@ Component({
         content: '本月您还有2次免扣积分的机会。确认是否取消。',
         confirmText: "关闭",
         cancelText: "确认",
-        success: function (res) {
+        success: function(res) {
           console.log(res);
           if (res.confirm) {
             console.log('关闭')

@@ -1,6 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "hot": "/components/home/content/hot/hot"
-  }
-}

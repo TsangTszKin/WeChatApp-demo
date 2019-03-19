@@ -1,6 +1,29 @@
 /**app.wxss**/
-
 @import 'style/weui.wxss';
+
+.clear {
+  clear: both;
+}
+
+.wx-h1 {
+  font-size: 20px;
+  ine-height: 20px;
+  letter-spacing: 2px;
+}
+
+.wx-h2 {
+  font-size: 15px;
+  ine-height: 15px;
+  letter-spacing: 2px;
+}
+
+.wx-font1 {
+  color: #000;
+}
+
+.wx-font2 {
+  color: #696969;
+}
 
 .container {
   height: 100%;

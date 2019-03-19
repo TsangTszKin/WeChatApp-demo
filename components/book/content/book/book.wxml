@@ -9,9 +9,9 @@
   <text class='title2'>养生项目：{{projectName}}</text>
   <text class='title2'>服务时间：{{serviceTime}}</text>
   <view class='option-group'>
-    <button class="weui-btn mini-btn" type="primary" size="mini" bindtap='look'>查看</button>
-    <button class="weui-btn mini-btn" type="default" size="mini" bindtap='evaluate'>评价</button>
-    <button class="weui-btn mini-btn" type="default" size="mini" bindtap='sign'>签到</button>
-    <button class="weui-btn mini-btn" type="warn" size="mini" bindtap='cancel'>取消</button>
+    <button class="weui-btn mini-btn" type="primary" size="mini" bindtap='look' data-id="{{id}}">查看</button>
+    <button class="weui-btn mini-btn" type="default" size="mini" bindtap='evaluate'  data-id="{{id}}">评价</button>
+    <button class="weui-btn mini-btn" type="default" size="mini" bindtap='sign'  data-id="{{id}}">签到</button>
+    <button class="weui-btn mini-btn" type="warn" size="mini" bindtap='cancel'  data-id="{{id}}">取消</button>
   </view>
 </view>
