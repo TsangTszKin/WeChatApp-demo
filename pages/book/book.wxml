@@ -9,6 +9,6 @@
     </block>
   </swiper>
 
-  <navbar homeList="{{homeList}}" projectList="{{projectList}}"  culinarianList="{{culinarianList}}" bookList="{{bookList}}"  bindtabChange="tabChange" activeIndex="{{activeIndex}}"></navbar>
+  <navbar homeList="{{homeList}}" projectList="{{projectList}}"  culinarianList="{{culinarianList}}" bookList="{{bookList}}" serviceList="{{serviceList}}"bindtabChange="tabChange" activeIndex="{{activeIndex}}"></navbar>
 
 </scroll-view>

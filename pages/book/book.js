@@ -24,7 +24,8 @@ Page({
     homeList: [],
     projectList: [],
     culinarianList: [],
-    bookList: []
+    bookList: [],
+    serviceList: []
   },
   init() {
     var _this = this;
@@ -186,6 +187,29 @@ Page({
           break;
 
         }
+      case 4:
+        {
+          let mockData = {
+            "serviceList|5": [{
+              'id|+1': 1,
+              "shopName|4-8": 'x',
+              "man|3": 'x',
+              "bookTime": '08:00~09:00',
+              "projectName|3-10": "x",
+              "serviceTime": '2019年3月9日 08:00',
+              "status|1": [0, 1, 2] //已服务，待签到，待服务
+            }]
+          }
+          http.ajax('get', '/api/test', {}, (res) => {
+            console.log("serviceList", res);
+            self.setData({
+              serviceList: res.data.serviceList
+            });
+            wx.hideToast()
+          }, mockData)
+          break;
+
+        }
     }
 
 
@@ -291,6 +315,32 @@ Page({
             })
             self.setData({
               bookList: bookList
+            });
+            wx.hideToast()
+          }, mockData)
+          break;
+
+        }
+      case 3:
+        {
+          let mockData = {
+            "serviceList|5": [{
+              'id|+1': 1,
+              "shopName|4-8": 'x',
+              "man|3": 'x',
+              "bookTime": '08:00~09:00',
+              "projectName|3-10": "x",
+              "serviceTime": '2019年3月9日 08:00',
+              "status|1": [0, 1, 2] //已服务，待签到，待服务
+            }]
+          }
+          http.ajax('get', '/api/test', {}, (res) => {
+            let serviceList = self.data.serviceList;
+            res.data.serviceList.forEach(element => {
+              serviceList.push(element);
+            })
+            self.setData({
+              serviceList: serviceList
             });
             wx.hideToast()
           }, mockData)

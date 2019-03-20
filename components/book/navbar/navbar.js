@@ -1,7 +1,8 @@
 // components/navbar.js
-var util = require('../../../utils/util.js')
+var util = require('../../../utils/util.js');
 var http = require('../../../utils/http.js');
-var app = getApp()
+var app = getApp();
+var sliderWidth = 96; // 需要设置slider的宽度，用于计算中间位置
 Component({
   /**
    * 组件的属性列表
@@ -20,6 +21,10 @@ Component({
       value: []
     },
     bookList: {
+      type: Array,
+      value: []
+    },
+    serviceList: {
       type: Array,
       value: []
     },
@@ -77,6 +82,18 @@ Component({
       unlinked(target) {
         // 每次有custom-li被移除时执行，target是该节点实例对象，触发在该节点detached生命周期之后
       }
+    },
+    './service-cell': {
+      type: 'child', // 关联的目标节点应为子节点
+      linked(target) {
+        // 每次有custom-li被插入时执行，target是该节点实例对象，触发在该节点attached生命周期之后
+      },
+      linkChanged(target) {
+        // 每次有custom-li被移动后执行，target是该节点实例对象，触发在该节点moved生命周期之后
+      },
+      unlinked(target) {
+        // 每次有custom-li被移除时执行，target是该节点实例对象，触发在该节点detached生命周期之后
+      }
     }
   },
 
@@ -84,7 +101,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    tabs: ["首 页", "养生项目", "调理师", "养生预约"],
+    tabs: ["首 页", "养生项目", "调理师", "养生预约", "客户服务"],
     sliderOffset: 0,
     sliderLeft: 0
   },

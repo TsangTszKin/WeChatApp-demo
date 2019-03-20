@@ -12,7 +12,8 @@
     "pages/answer/answer",
     "pages/question/question",
     "components/book/content/project/project",
-    "pages/artical/artical"
+    "pages/artical/artical",
+    "pages/qna/qna"
   ],
   "window": {
     "backgroundTextStyle": "light",

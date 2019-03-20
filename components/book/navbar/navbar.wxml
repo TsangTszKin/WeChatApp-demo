@@ -31,6 +31,11 @@
         <book-cell wx:for="{{bookList}}" wx:for-index="i" wx:key="id" wx:for-item="item" id="{{item.id}}" shopName="{{item.shopName}}" man="{{item.man}}" bookTime="{{item.bookTime}}" projectName="{{item.projectName}}" serviceTime="{{item.serviceTime}}"  status="{{item.status}}" />
       </view>
     </view>
+    <view class="weui-tab__content" hidden="{{activeIndex != 4}}">
+      <view class="weui-panel__bd">
+        <service-cell wx:for="{{serviceList}}" wx:for-index="i" wx:key="id" wx:for-item="item" id="{{item.id}}" shopName="{{item.shopName}}" man="{{item.man}}" bookTime="{{item.bookTime}}" projectName="{{item.projectName}}" serviceTime="{{item.serviceTime}}"  status="{{item.status}}" />
+      </view>
+    </view>
 
   </view>
 

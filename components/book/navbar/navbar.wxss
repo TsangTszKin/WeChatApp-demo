@@ -2,7 +2,7 @@
 @import '/style/weui.wxss';
 
 .weui-navbar__slider {
-  width: 25%;
+  width: 20%;
 }
 
 .weui-tab__panel {

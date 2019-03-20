@@ -1,7 +1,8 @@
 // components/navbar.js
-var util = require('../../../utils/util.js')
+var util = require('../../../utils/util.js');
 var http = require('../../../utils/http.js');
-var app = getApp()
+var app = getApp();
+var sliderWidth = 96; // 需要设置slider的宽度，用于计算中间位置
 Component({
   /**
    * 组件的属性列表

@@ -64,44 +64,19 @@ Component({
         url: '../../../../book-details/book-details?id=' + id
       })
     },
-    evaluate(e) {
-      let id = e.currentTarget.dataset.id;
-      wx.navigateTo({
-        url: '../../../../evaluate/evaluate?id=' + id
-      })
-    },
-    sign(e) {
+    service(e) {
       let id = e.currentTarget.dataset.id;
       wx.showModal({
-        title: '签到确认',
-        content: '您已成功签到',
-        confirmText: "健康问卷",
-        cancelText: "关闭",
-        success: function(res) {
+        title: '提示',
+        content: '是否确认服务',
+        confirmText: "确认",
+        cancelText: "取消",
+        success: function (res) {
           console.log(res);
           if (res.confirm) {
-            console.log('健康问卷');
-            wx.navigateTo({
-              url: '../../../../qna/qna',
-            })
-          } else {
-            console.log('关闭')
-          }
-        }
-      });
-    },
-    cancel() {
-      wx.showModal({
-        title: '取消预约',
-        content: '本月您还有2次免扣积分的机会。确认是否取消。',
-        confirmText: "关闭",
-        cancelText: "确认",
-        success: function(res) {
-          console.log(res);
-          if (res.confirm) {
-            console.log('关闭')
-          } else {
             console.log('确认')
+          } else {
+            console.log('取消')
           }
         }
       });
