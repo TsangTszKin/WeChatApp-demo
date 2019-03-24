@@ -2,7 +2,7 @@
 
 微信小程序demo
 
-![](images/1.png)
+![](images/readme/1.png)
 
 ### description
 - 界面及交互设计来自知乎 Android 版本
@@ -29,7 +29,7 @@ https://github.com/TsangTszKin/WeChatApplet.git
 
 下拉刷新等
 
-![](images/IMG_1132.GIF)
+![](images/readme/IMG_1132.GIF)
 
 底部 tab 切换
 
@@ -37,11 +37,11 @@ https://github.com/TsangTszKin/WeChatApplet.git
 
 顶部自定义 tab 切换
 
-![](images/IMG_1134.GIF)
+![](images/readme/IMG_1134.GIF)
 
 页面跳转
 
-![](images/IMG_1136.GIF)
+![](images/readme/IMG_1136.GIF)
 
 
 ##### Demo 用于学习交流, 转载请注明出处
