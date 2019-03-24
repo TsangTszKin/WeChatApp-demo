@@ -1,8 +1,8 @@
-# weapp-wechat-zhihu
+# weapp-wechat
 
-微信中的知乎--微信小程序 demo // Zhihu in Wechat
+微信小程序demo
 
-![](images/v_index.png)
+![](images/1.png)
 
 ### description
 - 界面及交互设计来自知乎 Android 版本
@@ -15,32 +15,33 @@
 * 下拉刷新
 * 上拉加载更多
 * 轮播图
+* 自定义组件化和组件之间的通讯
 <br/>等...
 
 ### Setup
 
 ```
-git@github.com:RebeccaHanjw/weapp-wechat-zhihu.git
+https://github.com/TsangTszKin/WeChatApplet.git
 ```
 下载安装Wechat DEV Tools, 并导入项目
 
 ### 演示
 
-首页下拉刷新等
+下拉刷新等
 
-![](images/index_scroll.gif)
+![](images/IMG_1132.GIF)
 
 底部 tab 切换
 
-![](images/bottom_tab.gif)
+![](images/IMG_1133.GIF)
 
 顶部自定义 tab 切换
 
-![](images/top_tab.gif)
+![](images/IMG_1134.GIF)
 
 页面跳转
 
-![](images/navigation.gif)
+![](images/IMG_1136.GIF)
 
 
 ##### Demo 用于学习交流, 转载请注明出处
